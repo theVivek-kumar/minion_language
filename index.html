@@ -2,51 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minion talk</title>
+    <title>Minion Translator</title>
+    <link href="index.css" rel="stylesheet">
     <style>
-        textarea{
-            width:70%;
-            height: 10vh;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-            background-color: rgb(193, 243, 11);
+       
+       *{margin: 0;padding: 0;box-shadow: red;}
         
+       @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+body{
+    margin: 3px;
+    background-image: url("maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: 80% 80% 80% 80%;
+    background-image: right;
+}
+.header{
+    color:rgb(0, 0, 0);
+    font-size:5rem;
+    text-align:center;
+    font-style: italic;
+    font-family:Calligraffitti;
+    padding:1rem;
+    background-color:#f3721c;
+    margin:0px;
+}
+.in-textarea{
+    max-width: 80%;
+    display: block;
+    margin: 2rem auto;
+    height:10rem;
+    width: 30rem;
+    padding:1rem;
+}
+.out-textarea{
+    max-width: 80%;
+    display: block;
+    margin: 2rem auto;
+    height:6rem;
+    width:30rem;
+    padding:1rem;
+    margin-top:0;
+}
+p{
+    margin-left:30%;
+}
+#btn-translate{
+    display:inline;
+    padding:0.5rem;
+    background-color:#ff9b06;
+    font-size:1rem;
+    max-width:80%;
+}
+
+.btn-container{
+   text-align:center;
+   
+}
+footer{
+    text-align:center;
+    background-color:#ee7f00;
+    padding:1rem;
+    font-style: italic;
+}
+.footer-content{
+    max-width: 80%;
+    text-align: center;
+    width:35rem;
+    margin:auto;
+
+}
+text{
+    padding: 2rem;
+    margin-top: 2rem;
+}
 
 
-        }
-        button{
-            background-color: aquamarine;
-            margin: 3%;
-            padding: 3%;
-            
 
-        }
-        #output{
-            border: 1px solid black;
-            height:10vh;
-            width: 70%;
-            margin: 1rem;
-            padding: 1rem;
-
-        }
     </style>
- 
-        
+  
 </head>
 <body>
-    <h1>Banana talk </h1>
-
-    <textarea id="txt-input"
+    <h1 class="header">Minion talk</h1>
+    <textarea class="in-textarea" placeholder="Type the message to be translated"></textarea>
+    <div class="btn-container"><button id="btn-translate">Translate To Banana</button></div> 
+    <p class="text">Translated output </p>
+    <textarea class="out-textarea" placeholder="To minion language"></textarea>
+    <footer>
+        <h1>About</h1>
+        <p class="footer-content">Are you a minions fan?</p>
+        <button
+        id="click">yes</button>
+        <p class="txt">I put no button because no one hate minion></p>
+    </footer>
+    <script src="app.js" ></script>
     
-    placeholder ="enter some text and we will convert it into banaan">
-
-    </textarea>
-    <script src = "app.js" type="text/javascript"></script>
-    <button id = "btn-translate">Translate </button>
-    <div ><h3>output will come here 👇</h3></div>
-    <div id="output"></div>
 </body>
 </html>
