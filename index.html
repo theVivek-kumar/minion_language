@@ -5,12 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minion talk</title>
+    <style>
+        textarea{
+            width:70%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: rgb(193, 243, 11);
+        
+
+
+        }
+        button{
+            background-color: aquamarine;
+            margin: 3%;
+            padding: 3%;
+            
+
+        }
+        #output{
+            border: 1px solid black;
+            height:10vh;
+            width: 70%;
+            margin: 1rem;
+            padding: 1rem;
+
+        }
+    </style>
  
         
 </head>
 <body>
-    <h1>banana talk </h1>
+    <h1>Banana talk </h1>
+
+    <textarea id="txt-input"
+    
+    placeholder ="enter some text and we will convert it into banaan">
+
+    </textarea>
     <script src = "app.js" type="text/javascript"></script>
-    <button id="click"> translate </button>
+    <button id = "btn-translate">Translate </button>
+    <div ><h3>output will come here 👇</h3></div>
+    <div id="output"></div>
 </body>
 </html>
